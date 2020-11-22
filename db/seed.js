@@ -7,7 +7,7 @@ let playerCount = ['1 player', '2 players', '2 to 4 players', '4 players', '4 to
 const writeCSVFile = fs.createWriteStream('db/products.csv');
 
 const streamProductsToFile = (writer, encoding, callback) => {
-  let i = 1000;
+  let i = 10000000;
   const write = () => {
     let ok = true;
     do {
